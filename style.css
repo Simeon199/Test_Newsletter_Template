@@ -17,6 +17,10 @@ section {
     background-color: cadetblue;
 }
 
+h1 {
+    text-align: center;
+}
+
 .newsletter-section {
     display: flex;
     flex-direction: column;
@@ -30,14 +34,15 @@ section {
     border: 2px solid black;
     border-radius: 16px;
     padding: 8px;
-    background-color: rgb(234, 234, 245);
+    background-color: rgb(191, 197, 155);
     color: black;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 .newsletter-button:hover {
-    background-color: rgb(133, 133, 167);
+    background-color: rgb(190, 181, 53);
 }
 
 a {
@@ -59,5 +64,29 @@ a {
     border: 4px solid black;
     border-radius: 16px;
     padding: 24px;
-    background-color: azure;
+    background-color: rgb(234, 234, 243);
+    box-shadow: 7px 8px 11px 8px #05060a;
+}
+
+@media(max-width: 600px){
+    h1 {
+        font-size: 24px;
+    }
+
+    .newsletter-content {
+        width: 80%;
+    }
+
+    .newsletter-section {
+        font-size: 14px;
+    }
+
+    .newsletter-button {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .description-and-content {
+        text-align: center;
+    }
 }
