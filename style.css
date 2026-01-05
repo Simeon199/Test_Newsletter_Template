@@ -13,22 +13,34 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: cadetblue;
+}
+
+.main-title {
+    max-width: 90%;
+    background: rgb(228 231 235);
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 8px 8px 0px 0px #05060a;
 }
 
 h1 {
     text-align: center;
 }
 
-.newsletter-section {
+h2 {
+    text-align: center;
+}
+
+.content-section {
     display: flex;
     flex-direction: column;
     gap: 24px;
     font-size: 16px;
 }
 
-.newsletter-button {
+.button {
     cursor: pointer;
     width: 75%;
     border: 2px solid black;
@@ -41,7 +53,7 @@ h1 {
     font-weight: bold;
 }
 
-.newsletter-button:hover {
+.button:hover {
     background-color: rgb(190, 181, 53);
     transform: scale(1.125);
 }
@@ -58,7 +70,7 @@ a {
     gap: 16px;
 }
 
-.newsletter-content {
+.main-content {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -69,20 +81,26 @@ a {
     box-shadow: 7px 8px 11px 8px #05060a;
 }
 
+.parting-line {
+    background-color: black;
+    height: 6px;
+    width: 100dvw;
+}
+
 @media(max-width: 600px){
     h1 {
         font-size: 24px;
     }
 
-    .newsletter-content {
+    .main-content {
         width: 80%;
     }
 
-    .newsletter-section {
+    .content-section {
         font-size: 14px;
     }
 
-    .newsletter-button {
+    .button {
         width: 90%;
         text-align: center;
     }
