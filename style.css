@@ -25,6 +25,19 @@ section {
     box-shadow: 8px 8px 0px 0px #05060a;
 }
 
+.complete-content-without-title {
+    display: flex;
+    justify-content: space-around;
+    width: 100dvw;
+}
+
+.qr-code-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
 h1 {
     text-align: center;
 }
@@ -83,8 +96,17 @@ a {
 
 .parting-line {
     background-color: black;
-    height: 6px;
-    width: 100dvw;
+    height: 4px;
+}
+
+.qr-code-content span {
+    font-weight: bold;
+}
+
+@media(max-width: 800px){
+    .main-content {
+        width: 80%;
+    }
 }
 
 @media(max-width: 600px){
@@ -107,5 +129,9 @@ a {
     
     .description-and-content {
         text-align: center;
+    }
+
+    .qr-code-content img {
+        width: 80%;
     }
 }
